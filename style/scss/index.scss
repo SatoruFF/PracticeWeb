@@ -1,0 +1,80 @@
+@import "nullstyle.scss"; //файл обнуляющих стилей
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+%displaytmp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+$red: rgb(255, 0, 0);
+$normalfont:'Montserrat', sans-serif;
+
+body {
+    font-family: $normalfont;
+}
+
+body::before {
+    background: url(images/b.jpg) no-repeat center center;
+    background-size: cover;
+    content: ' ';
+    min-height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    will-change: transform;
+    z-index: -1;
+    object-fit: cover;
+}
+
+.header {
+    width: 100%;
+    min-height: 100px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    font-family: $normalfont;
+    align-items: center;
+}
+
+.header__item img {
+    height: 100px;
+    width: 150px;
+}
+
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $normalfont;
+}
+
+.main__title {
+    font-size: large;
+    font-weight: bold;
+    margin-top: 40px;
+}
+
+.main__desc {
+    margin-bottom: 30px;
+}
+
+.main__card {
+    display: flex;
+    flex-direction: row;
+}
+
+.main__card__item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__card__item img {
+    width: 200px;
+    height: 200px;
+}

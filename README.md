@@ -1,9 +1,9 @@
-# ControlCheckWeb
-Create fullStack landing web site with using:
-* figma
-* zeplin
+# PracticeAkBars
+Create fullStack web site with using:
 * gulp
+* figma
 * sass/scss
-* css/flex/grid
-* node.js
-* DB
+* css/flex/grid/BEM
+* node.js/express
+* mongoDB
+* boostrap

@@ -29,7 +29,7 @@ function scss() {
         cascade: false
     }))
     .pipe(csso())
-    .pipe(concat('index.css'))
+    // .pipe(concat('index.css'))
     .pipe(dest('dist'))
 }
 

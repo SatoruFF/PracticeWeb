@@ -8,6 +8,15 @@
     text-align: center;
     flex-direction: column;
 }
+
+%head {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+$wht: #ffffff;
 $red: rgb(255, 0, 0);
 $normalfont:'Montserrat', sans-serif;
 
@@ -32,16 +41,17 @@ body::before {
 .header {
     width: 100%;
     min-height: 100px;
-    background-color: white;
+    background-color: $wht;
     display: flex;
     justify-content: space-around;
     font-family: $normalfont;
     align-items: center;
+    font-size: small;
 }
 
 .header__item img {
     height: 100px;
-    width: 150px;
+    width: 120px;
 }
 
 .main {
@@ -52,8 +62,12 @@ body::before {
     font-family: $normalfont;
 }
 
+.main__text {
+    padding: 15px;
+}
+
 .main__title {
-    font-size: large;
+    font-size: 29px;
     font-weight: bold;
     margin-top: 40px;
 }
@@ -63,8 +77,12 @@ body::before {
 }
 
 .main__card {
+    margin-top: 30px;
+    padding: 40px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .main__card__item {
@@ -72,9 +90,55 @@ body::before {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
+    width: 400px;
+    height: 400px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 15%;
+    border: green solid;
+    background-color: $wht;
 }
 
 .main__card__item img {
     width: 200px;
     height: 200px;
+}
+
+.header__up {
+    padding: 5px;
+    border-bottom: grey 1px solid;
+    margin-bottom: 10px;
+    @extend %head
+}
+
+.header__down {
+    @extend %head
+}
+
+.header__space {
+    width: 80%;
+}
+
+.header__up__item {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: green;
+        border-bottom: #008080 2px solid ;
+    }
+}
+
+.header__down__item {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: green;
+        border-bottom: #008080 2px solid ;
+    }
+}
+
+.card__title {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }

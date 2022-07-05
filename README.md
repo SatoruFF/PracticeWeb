@@ -7,8 +7,14 @@ Create fullStack web site with using:
 * node.js/express
 * mongoDB
 * boostrap
-Start with Gulp:
-<npm install>
-<gulp serve>
-Start with nodemon:
-<npm run dev>
+
+<h2>Start with gulp:</h2>
+
+    npm install
+    gulp serve
+    
+
+<h2>Start with nodeJS</h2>
+
+    npm install
+    node index.js

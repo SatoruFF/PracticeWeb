@@ -142,3 +142,25 @@ body::before {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+@media screen and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+    }
+    .header__up {
+        flex-direction: column;
+    }
+    .header__down {
+        flex-direction: column;
+    }
+    .header__up__item {
+        margin: 5px;
+    }
+    .header__down__item {
+        margin: 5px;
+    }
+    .btn {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}

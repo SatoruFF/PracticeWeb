@@ -84,8 +84,8 @@ body::before {
 }
 
 .prank {
-    width: 100%;
-    height: 500px;
+    min-width: 100%;
+    min-height: 500px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -106,6 +106,9 @@ body::before {
     letter-spacing: 1px;
     margin-left: 150px;
     font-size: 21px;
+    &:hover {
+        color: lightblue;
+    }
 }
 
 .perspective {
@@ -234,14 +237,63 @@ form {
 }
 
 .form__submit {
-    width: 100%;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    background-color: lightblue;
+    &:hover {
+        background-color: lightgreen;
+    }
 }
 
 .form__resum {
     margin-top: 30px;
+    @extend %displaytmp
 }
+
+@media screen and (max-width: 992px) {
+    .header {
+        flex-direction: column;
+    }
+    .header__item {
+        margin: 10px;
+    }
+    .btn {
+        margin-bottom: 15px;
+    }
+    .title {
+        flex-direction: column;
+    }
+    .title__text {
+        margin-top: 30px;
+    }
+    .title img {
+        width: 100%;
+    }
+    .prank {
+        overflow: hidden;
+        flex-direction: column;
+    }
+    .prank__image {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .prank__text {
+        margin-bottom: 30px;
+        margin-right: 30px;
+    }
+    .conditions__card {
+        flex-direction: column;
+        margin: 20px;
+    }
+    .card {
+        margin-top: 20px;
+    }
+    .perspective__text {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+

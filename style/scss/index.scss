@@ -70,6 +70,9 @@ body::before {
     font-size: 29px;
     font-weight: bold;
     margin-top: 40px;
+    &:hover {
+        color: lightgreen;
+    }
 }
 
 .main__desc {

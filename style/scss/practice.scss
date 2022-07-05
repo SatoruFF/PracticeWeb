@@ -219,6 +219,7 @@ form {
 
 .form__area{
     width: 100%;
+    @extend %displaytmp
 }
 
 .form__area input{
@@ -246,6 +247,10 @@ form {
 .form__resum {
     margin-top: 30px;
     @extend %displaytmp
+}
+
+.regStatus {
+    margin-top: 30px;
 }
 
 @media screen and (max-width: 992px) {
